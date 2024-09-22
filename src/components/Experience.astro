@@ -1,0 +1,44 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Full Stack Developer",
+    company: "Grupo Enthous",
+    description:
+      "Desarrollo de sistemas web y móviles multiplataforma en proyectos a gran escala, para comercializar productos de software. Cumplimiento de requerimientos y metodologías de software, control y calidad.",
+    //link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Enero 2024 - Abril 2024",
+    title: "Desarrollador Web y Analista de Datos",
+    company: "ClickSoft S.A de C.V",
+    description:
+      "Desarrollo de sistemas web para clientes como Oxxo, dando soluciones a la medida. Tratamiento de datos para agilizar procesos de clientes. Gestión de solicitudes e incidencias de los clientes sobre aspectos técnicos de software."
+  },
+  {
+    date: "Septiembre 2023 - Dicimebre 2023",
+    title: "Soporte de TI y Gestor de Proyectos",
+    company: "Gruppo Mastrotto Mexico",
+    description:
+      "Creación y desarrollo de programas o sistemas, mantenimiento de existentes y actualización. Mantenimiento y soporte de infraestructura de TI para cliente. Propuestas y desarrollo de nuevos proyectos para la mejora de las distintas áreas."
+  },
+  {
+    date: "Enero 2023 - Agosto 2023",
+    title: "Programador Jr",
+    company: "Fabrica de Software Malinche",
+    description:
+      "Programación de soluciones de software ajustadas a especificaciones y mejores practicas. Gestión de bibliotecas y API, y traducción de requisitos funcionales a especificaciones técnicas."
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
